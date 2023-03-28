@@ -56,6 +56,37 @@ button {
  transition: 0.2s ease-in-out;
 }
 
+button:hover {
+ background: rgb(201, 201, 201);
+ color: #7c7c7c;
+}
+
 h1.temp {
  margin: 0;
+ margin-bottom: 0.4em;
+}
+
+.flex {
+ display: flex;
+ align-items: center;
+}
+
+.description {
+ text-transform: capitalize;
+ margin-left: 8px;
+}
+
+.weather.loading {
+ display: none;
+ max-height: 20px;
+ position: relative;
+}
+
+.weather.loading:after {
+ display: block;
+ content: 'Loading...';
+ color: white;
+ position: absolute;
+ top: 0;
+ left: 20px;
 }
